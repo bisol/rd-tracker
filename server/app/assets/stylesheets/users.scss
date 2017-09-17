@@ -1,0 +1,22 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'common';
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.button a {
+  background-color: #fad;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 0px 8px;
+  line-height: 1.5;
+  font-weight: bold;
+  margin: 2px;
+}

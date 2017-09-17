@@ -1,0 +1,27 @@
+<span class="app-header"><%=t "users.index.header" %></span>
+
+<div class="card">
+  <div class="title"><%=t "users.index.title" %></div>
+  
+  <div class="content">
+    <table class="fixed-table">
+      <tr>
+        <th class="large-row"><%=t "users.index.table.header.id" %></th>
+        <th class="large-row"><%=t "users.index.table.header.email" %></th>
+        <th class="small-row"><%=t "users.index.table.header.link" %></th>
+      </tr>
+
+      <% @users.each do |user| %>
+        <tr>
+          <td class="userid-row"><%= user.userid %></td>
+          <td><%= user.email %></td>
+          <td>
+            <span class="button">
+              <%= link_to '»', user_path(user) %>
+            <span>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

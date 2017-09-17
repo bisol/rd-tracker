@@ -1,0 +1,27 @@
+<span class="app-header">
+  <div><%=t("users.show.header", user: @user.userid) %></div>
+</span>
+
+<div class="card">
+  <div class="title"><%=t "users.show.contact.title" %></div>
+  <div class="content"><%=t("users.show.contact.email", email: @email_safe) %></div>
+</div>
+
+<div class="card">
+  <div class="title"><%=t "users.show.routes.title" %></div>
+
+  <div class="content">
+    <table class="fixed-table">
+      <tr>
+        <th class="large-row"><%=t "users.show.routes.table.path" %></th>
+        <th class="large-row"><%=t "users.show.routes.table.date" %></th>
+      </tr>
+      <% @user.user_visits.each do |visit| %>
+      <tr>
+        <td><%= visit.path %></td>
+        <td class="right-text"><%= l visit.timestamp, format: :date_time %></td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

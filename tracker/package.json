@@ -1,0 +1,21 @@
+{
+  "name": "rd-tracker-lib",
+  "version": "0.1.0",
+  "description": "Simple site to test location tracking",
+  "repository": {},
+  "engines": {
+    "npm": ">=3",
+    "node": ">=5"
+  },
+  "author": "Bruno Bisol",
+  "license": "MIT",
+  "scripts": {
+    "build": "minify --output rd-tracker-lib.min.js index.js"
+  },
+  "dependencies": {
+    "fingerprintjs2": "^1.5.1"
+  },
+  "devDependencies": {
+    "minifier": "^0.8.1"
+  }
+}

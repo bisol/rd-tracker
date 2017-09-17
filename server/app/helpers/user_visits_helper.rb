@@ -1,0 +1,2 @@
+module UserVisitsHelper
+end

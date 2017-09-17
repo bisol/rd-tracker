@@ -1,0 +1,63 @@
+$bg-color: #def;
+$header-color: #abc;
+
+body {
+  // font: 100% $font-stack;
+  background-color: $bg-color;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.app-header {
+  text-align: center;
+  background-color: $header-color;
+  line-height: 4;
+  font-size: 2em;
+  font-weight: bold;
+  width: 100%;
+  display: block;
+}
+
+.fixed-table {
+  margin: auto;
+  padding: 20px 0;
+}
+
+.large-row {
+  width: 45%
+}
+
+.userid-row {
+  font-family: monospace;
+}
+
+.small-row {
+  width: 10%  
+}
+
+table th {
+  font-weight: bold;  
+}
+
+.card {
+  background-color: #fff;
+  margin: auto;
+  width: 75%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.5);  
+}
+
+.title {
+  background-color: $header-color;
+  text-align: center;
+  line-height: 2;
+}
+
+.content {
+  padding: 10px;
+}
+
+.right-text {
+  text-align: right;  
+}
