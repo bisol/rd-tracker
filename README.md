@@ -10,7 +10,7 @@ Each compoment is on a different dir on this same repo:
 
 This lib creates a session with the Rails backend, and sends user activity.
 It's session is stablished through a browser fingerprint, which is used to identify the user accross visits.
-The tracker monitors clicks on <nav> elements and sends full URLs to the server (together with a click timestamp). This allows trackinkg the user throuh different sites using the tracker.
+The tracker monitors clicks on \<nav\> elements and sends full URLs to the server (together with a click timestamp). This allows trackinkg the user throuh different sites using the tracker.
 It could be changed to monitor 'window.location' via polling, or monitor other elements (such as buttons)
 The tracked user is exposed to the parent web site through a global variable.
 
